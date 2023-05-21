@@ -166,7 +166,7 @@ final_bessy:-
     objeto(bessy, galinheiro),
     write("VOCE GANHOU!"),
     nl,
-    write("Bessy está no galinheiro novamente! Obrigado por jogar").
+    write("Bessy esta no galinheiro novamente! Obrigado por jogar").
 
 final_bessyzilla:-
     objeto(ovo, reator),
@@ -181,7 +181,7 @@ final_bessyzilla:-
 
 print_zilla:-
     nl,
-    nl.
+    nl,
     write("     MM           "),nl,
     write("====>''\\___/|     "),nl,
     write("      \\_  _/      "),nl,
@@ -205,7 +205,7 @@ rodar:-
     nl,
     write("inventario.  |   galinheiro  |   "),
     nl,
-    write("onde_estou.  |               |   "),
+    write("onde_estou.  |   reator      |   "),
     nl,
     write("------------------------------------------"),
     nl,
