@@ -15,6 +15,7 @@ local(lagoa).
 local(casa).
 local(floresta).
 local(galinheiro).
+local(reator).
 
 
 % Definindo (objeto, local)
@@ -156,10 +157,35 @@ inventario:-
 
 % Verifica se os parametros para a conclusão do jogo foram satisfeitos
 finalizado:- 
+    final_bessy.
+
+finalizado:- 
+    final_bessyzilla.
+
+final_bessy:-
     objeto(bessy, galinheiro),
     write("VOCE GANHOU!"),
     nl,
     write("Bessy está no galinheiro novamente! Obrigado por jogar").
+
+final_bessyzilla:-
+    objeto(ovo, reator),
+    write("VOCE GANHOU!"),
+    nl,
+    write("Voce colocou o ovo no reator, o que criou a BESSYZILLA, ela seguiu e destroiu a cidade!"),
+    nl,
+    print_zilla, 
+    nl,
+    write("Obrigado por jogar").
+
+
+print_zilla:-
+    nl,
+    nl.
+    write("     MM           "),nl,
+    write("====>''\\___/|     "),nl,
+    write("      \\_  _/      "),nl,
+    write("        ][        "),nl.
 
 
 % Inicia o jogo
